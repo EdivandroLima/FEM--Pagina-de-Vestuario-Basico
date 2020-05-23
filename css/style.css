@@ -1,0 +1,166 @@
+body {
+	background: hsl(0, 100%, 98%) url(../img/bg-pattern-desktop.svg) no-repeat top left;
+	background-size: 60% auto;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 400;
+	color: hsl(0, 36%, 70%);
+	font-size: 16px;
+	margin: 0;
+	padding: 0
+}
+@media (min-width: 800px) {
+	body {
+		overflow: hidden
+	}
+}
+* {
+	box-sizing: border-box
+}
+
+/* Container
+------------------*/
+.container {
+	width: 60%;
+	display: inline-block;
+	overflow: hidden
+}
+.row {
+	max-width: 500px;
+	padding:50px 30px 30px 30px;
+	margin: 0 auto
+}
+@media (max-width: 800px) {
+	.container {
+		width: 100%
+	}
+	.row {
+		padding: 30px 20px;
+		max-width: 100%
+	}
+}
+
+/* Imagem
+-------------*/
+.hero-img {
+	float: right;
+	width: 40%;
+	background: url(../img/hero-desktop.jpg) no-repeat top left;
+	background-size: 100% auto;
+	height: 100vh
+}
+@media (max-width: 1300px) {
+	.hero-img {
+		background-size: auto 100%
+	}
+}
+
+@media (max-width: 800px) {
+	.hero-img {
+		background-image: url(../img/hero-mobile.jpg);
+		background-size: 100%;
+		width: 100%;
+		height: 300px
+	}
+}
+@media (max-width: 500px) {
+	.hero-img {
+		height: 240px
+	}
+}
+
+/* Tipografia H1, p
+------------------*/
+h1 {
+	font-size: 4em;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	margin: 0;
+	font-weight: 300
+}
+h1 span {
+	display: block;
+	color: black;
+	font-weight: 600
+}
+p {
+	line-height: 1.6em
+}
+@media (max-width: 800px) {
+	h1 {
+		font-size: calc(2rem + 1.8vw)
+	}
+	main {
+		text-align: center
+	}
+}
+
+/* Input E-mail
+------------------*/
+.form {
+	margin: 40px 0 20px 0;
+	position: relative
+}
+.form input {
+	background: hsl(0, 100%, 98%) url(../img/icon-error.svg) no-repeat;
+	background-position: right 0px center; 
+	height: 50px;
+	width: 100%;
+	margin: 0;
+	display: inline;
+	padding-left: 25px;
+	border-radius: 30px;
+	color: hsl(0, 36%, 70%);
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 23px
+}
+.form #email {
+	border: 1px solid #d6d6d6;
+	padding-right: 97px
+}
+.form #email:focus {
+	box-shadow: -3px 5px 5px rgba(0,0,0, .1)
+}
+.form #enviar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 90px;
+	background: url(../img/icon-arrow.svg)  no-repeat center,
+				linear-gradient(70deg, hsl(0, 93%, 85%), hsl(0, 93%, 70%));
+	border: none;
+	cursor: pointer;
+	box-shadow: -3px 5px 5px rgba(0,0,0, .1)
+}
+.form #enviar:hover {
+	background: url(../img/icon-arrow.svg)  no-repeat center,
+				linear-gradient(70deg, hsl(0, 93%, 70%), hsl(0, 93%, 85%));
+	box-shadow: -2px 2px 3px rgba(0,0,0, .1)
+}
+#email-invalid {
+	color: hsl(0, 93%, 68%);
+	padding: 10px 30px;
+	font-size: 13px
+}
+
+/* Footer
+-----------*/
+footer {
+	width: 60%;
+	font-size: 11px;
+	position: absolute;
+	bottom: 0;
+	padding: 0 20px;
+	text-align: center
+}
+footer a {
+	color: hsl(0, 93%, 68%);
+	text-decoration: none
+}
+@media (max-width: 800px) {
+	footer {
+		position: relative;
+		width: 100%;
+	}
+}

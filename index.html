@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
+    <!-- Style -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Base Apparel coming soon page - Frontend Mentor</title>
+</head>
+<body>
+    <header class="container">
+        <div class="row">
+            <a href="#"><img src="img/logo.svg" alt="Logo"></a>
+        </div>
+    </header>
+    <div class="hero-img"></div><!-- Imagem de background /-->
+    <main>
+        <div class="container"><!-- Container -->
+            <div class="row"><!-- Row -->
+                <h1>
+                    We're
+                    <span>coming soon</span>
+                </h1>
+                <p>
+                    Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
+                </p>
+                <form class="form" name="form" method="post" action="">
+                    <input onblur="validarEmail(form.email)" type="text" name="email" id="email" placeholder="Email Address">
+                    <input onclick="check_form(form.email)" type="button" id="enviar" value="">
+                    <div id="email-invalid"></div>
+                </form>
+            </div><!--/ Row -->
+        </div><!--/ Container -->
+    </main>
+    <!-- Verificar se email é válido -->
+    <script src="./js/validar-email.js"></script>
+    <footer>
+        <p>
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="https://github.com/EdivandroLima">Edivandro Lima</a>.
+        </p>
+    </footer>
+</body>
+</html>
