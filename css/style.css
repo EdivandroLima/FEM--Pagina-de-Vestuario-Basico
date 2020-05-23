@@ -115,6 +115,10 @@ p {
 	font-size: 16px;
 	line-height: 23px
 }
+.form label {
+	position: absolute;
+	left: -300px
+}
 .form #email {
 	border: 1px solid #d6d6d6;
 	padding-right: 97px

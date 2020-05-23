@@ -14,6 +14,7 @@ function validarEmail(field) {
 			id_invalido.innerHTML="Please provide a valid email";
 			id_email.style.borderColor="hsl(0, 93%, 68%)";
 			id_email.style.backgroundPosition="right 95px center";
+			id_enviar.type="button";
 		}
 		else {
 			id_invalido.innerHTML="";
@@ -34,5 +35,6 @@ function check_form(e) {
 		document.getElementById('email-invalid').innerHTML="Please provide a valid email";
 		document.getElementById('email').style.borderColor="hsl(0, 93%, 68%)";
 		document.getElementById('email').style.backgroundPosition="right 95px center";
+		document.getElementById('enviar').type="button";
 	}
 }
